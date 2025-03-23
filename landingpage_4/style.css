@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+}
+#mtext{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-align: center;
+}
+#mtext h1{
+    white-space: nowrap;
+    font-size: 88px;
+    user-select: none;
+    font-weight: 100;
+}
+#mtext h3{
+    font-size: 44px;
+    user-select: none;
+    font-weight: 100;
+    line-height: 1;
+}
+#left{
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    width: 45%;
+    height: 100%;
+    background-color: rgb(88, 88, 88);
+}
+#center{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1508184964240-ee96bb9677a7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8);
+    background-size: cover;
+    background-position: center;
+}
+#right{
+    padding: 10px 0;
+    width: 5%;
+    height: 100%;
+    background-color: rgb(88, 88, 88);
+}
+#nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#nav a:nth-child(1){
+    font-size: 30px;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+#left #centerimg{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin-left: 25%;
+    margin-top: 20%;
+    background-image: url(https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#centerimg #text{
+    display: flex;
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    height: 50px;
+}
+#text #parts{
+    width: 30%;
+}
+#text #para{
+    width: 70%;
+}
+#parts h5{
+    margin-bottom: 20px;
+}
+#para p{
+    line-height: 20px;
+    font-size: 12px;
+}
+#scroll #line{
+    width: 150px;
+    height: 2px;
+    background-color: whitesmoke;
+}
+#scroll{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: -10px;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+    gap: 10px;
+    left: 10%;
+}
+#scroll h4{
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#center #card{
+    display: flex;
+    position: absolute;
+    width: 260px;
+    height: 170px;
+    right: -10%;
+    bottom: 10%;
+    background-color: red;
+    z-index: 999;
+}
+#cicons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+#cicons i{
+    color: black;
+}
+#cimg{
+    width: 80%;
+    height: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1728014305859-56de13d1b008?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D);
+    background-size: cover;
+    background-position: center;
+}
+#relem{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70%;
+}
+#relem i{
+    font-size: 25px;
+}
+#relem #rlinks{
+    display: flex;
+    gap:50px;
+    transform: translateY(-150px) rotate(90deg);
+    font-size: small;
+    letter-spacing: 2px;
+    
+}
+#rlinks a{
+    color: whitesmoke;
+    text-decoration: none;
+}
