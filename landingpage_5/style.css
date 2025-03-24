@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1526216538347-8a69e894ae24?q=80&w=2913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#main #left{
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.300);
+    gap: 50px;
+}
+#main #right{
+    width: 75%;
+    height: 100%;
+}
+#nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    padding: 20px 80px;
+    justify-content: space-between;
+}
+#nright a{
+    text-decoration: none;
+    margin-right: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+#nright a:nth-child(1){
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 2px;
+}
+#left .place{
+    width: 100%;
+}
+#left .place h3{
+    opacity: .7;
+    border-bottom: 2px solid whitesmoke;
+    font-weight: 200;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+#left .place h5{
+    opacity: .4;
+}
+#left .place:nth-child(2) h3{
+    opacity: 1;
+    font-size: 60px;
+    white-space: nowrap;
+    
+}
+#left .place:nth-child(2) h5{
+    font-size: 20px;
+    white-space: nowrap;
+    
+}
+#right #text{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    text-align: right;
+}
+#text h3{
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 1;
+}
+#text h1{
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 1;   
+}
+
+#text #input{
+    font-size: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#text input{
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    padding: 12px 22px;background-color: transparent;
+    border: none; 
+    outline: none; 
+}
+#text input::placeholder{
+    color: white;
+}
+#scroll #line{
+    width: 150px;
+    height: 2px;
+    background-color: whitesmoke;
+}
+#scroll{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: -10px;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+    gap: 10px;
+    left: 5%;
+    overflow: hidden;
+}
