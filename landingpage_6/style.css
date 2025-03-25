@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1673266203708-eb82aa58d261?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8);
+    background-size: cover;
+    background-position: center
+}
+#nav{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+#nav #nlinks{
+    
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#nav i{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50px;
+}
+#nlinks a{
+    position: relative;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 12px;
+}
+#nlinks #active::before{
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 3px;
+    top:-5px;
+    left: 50%;
+    background-color: aliceblue;
+    transform: translate(-50%,-50%);
+}
+#nav h5{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 5px solid white;
+}
+#content{
+    color: whitesmoke;
+    position: absolute;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding: 10px;
+}
+#content h1{
+    font-size: 70px;
+}
+#contentbox{
+    margin-top: 20px;
+    align-items: top;
+    display: flex;
+    gap: 10px;
+}
+#line{
+    width: 200px;
+    height: 2px;
+    background-color: white;
+}
+#content h4{
+    display: flex;
+    line-height: 1;
+}
+#content span{
+    font-size: xx-small;
+}
+#contpara{
+    left: 10%;
+    line-height: 30px;
+    margin-top: -3px;
+}
+#bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    position: absolute;
+    width: 70%;
+    height: 20%;
+    background-color: white;
+    bottom: 0;
+}
+#cube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    color: white;
+    height: 50px;
+    width: 50px;
+    top: -50px;
+    right: -50px;
+    
+}
+#sec p{
+    opacity: .3;
+    font-size: 12px;
+    font-weight: 200;
+}
